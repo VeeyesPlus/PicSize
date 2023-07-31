@@ -16,7 +16,7 @@ Intuitive graphical interface for easy usage.
 
 ### Requirements:
 
-Python 3.x
+Python 3.0 or higher
 The following Python packages (install using pip install):
 1. Pillow
 2. tqdm
@@ -26,15 +26,16 @@ The following Python packages (install using pip install):
 
 #### git clone:  
 https://github.com/VeeyesPlus/picsize.git
-				
+```				
 cd picsize
-
+```
 #### Run the Application: 
 PicSize.exe
 
 #### Copy code:
+```
 python picsize.py
-
+```
 ### Usage:
 
 Click on the "Browse" buttons to select the input and output folders.
