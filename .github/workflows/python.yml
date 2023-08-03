@@ -1,0 +1,25 @@
+name: Python CI
+
+on:
+  push:
+    branches:
+      - PicSize  # Adjust the branch name if needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'  # Replace 'x' with your desired Python version
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt  # Adjust the requirements file name if needed
+
+    - name: Run tests
+      run: pytest  # Adjust the test command if needed
